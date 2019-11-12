@@ -20,12 +20,13 @@ class ClassifyImage:
         self.input_size = input_size
 
     def predict(self, img):
+        # resize the image
         img = np.array(resize(np.array([img]), self.input_size)[0])
-
+        # preprocess the input image for ResNet50
         preprocessed_img = preprocess_input(img)
 
         predictions = self.model.predict(np.array([preprocessed_img]))[0]
-
+        # selecting the prediction with the highest probability
         highest_pred_index = np.where(predictions == max(predictions))[0][0]
 
         # map the correct label with the highest prediction's index
