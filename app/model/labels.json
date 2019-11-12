@@ -1,0 +1,15 @@
+{
+  'address_card': 0,
+  'belt': 1,
+  'id_card': 2,
+  'jeans': 3,
+  'keys': 4,
+  'drivers_license': 5,
+  'money': 6,
+  'pendrive': 7,
+  'phone': 8,
+  'sim_card': 9,
+  'social_security_card': 10,
+  'tax_card': 11,
+  'wallet': 12
+}

@@ -1,0 +1,9 @@
+# exclude the datasets
+arbori_dataset
+
+# exclude training directory
+train
+
+# misc
+.DS_Store
+.ipynb*
