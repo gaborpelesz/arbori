@@ -1,5 +1,6 @@
 import time
 import json
+from dotenv import load_dotenv
 from flask import Flask, request, redirect, jsonify
 from flask_api import FlaskAPI, status
 from process_image.model import ClassifyImage
@@ -48,5 +49,7 @@ def predict():
             }, status.HTTP_500_INTERNAL_SERVER_ERROR
         
 
-def main():
+if __name__ == '__main__':
+    load_dotenv(override=True)
+
     app.run(host='0.0.0.0', port=3000)

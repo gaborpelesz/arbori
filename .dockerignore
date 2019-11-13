@@ -1,3 +1,12 @@
+# any leftover image
+*.jpg
+
+# python cached data
+__pycache__
+
+# macOS folder file
+.DS_Store
+
 # exclude the datasets
 arbori_dataset
 
