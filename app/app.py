@@ -45,7 +45,8 @@ def predict():
 
         return {
                 "status": "Failed",
-                "error_message": "The model wasn't initialized properly. There might be a bug in the code.",
+                "status_message": "The model wasn't initialized properly. There might be a bug in the code.",
+                "error_message": ""
             }, status.HTTP_500_INTERNAL_SERVER_ERROR
         
 
