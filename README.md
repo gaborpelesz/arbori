@@ -94,6 +94,6 @@ All internal server errors and bad request has the following JSON response struc
 
 ## Postman
 
-Postman collection file: `postman_example/armuseumguide.postman_collection.json`.
+Postman collection file: `postman_example/arbori.postman_collection.json`.
 
 © gaborpelesz 2019
